@@ -1,0 +1,11 @@
+
+DROP TABLE IF EXISTS USUARIO;
+
+CREATE TABLE USUARIO (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    apellidos VARCHAR(100) NOT NULL,
+    correo VARCHAR(100) NOT NULL,
+    fecha_nacimiento date NOT NULL
+);
+

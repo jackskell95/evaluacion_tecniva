@@ -1,0 +1,80 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Usuario",
+    "dateExported": "2023-07-14T20:09:35.332Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "4a8f6e64-8c30-4c46-a7e7-6668e7bc7720",
+            "colId": "49e24378-2d44-44bd-b8bf-e752177b9b67",
+            "containerId": "",
+            "name": "obtener-usuarios",
+            "url": "http://localhost:8080/api/obtener-usuarios",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-14T20:05:13.366Z",
+            "modified": "2023-07-14T20:05:41.286Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "36772a88-321d-4967-868a-5d24790a3648",
+            "colId": "49e24378-2d44-44bd-b8bf-e752177b9b67",
+            "containerId": "",
+            "name": "agregar-usuario",
+            "url": "http://localhost:8080/api/agregar-usuario",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-14T20:05:55.507Z",
+            "modified": "2023-07-14T20:07:20.291Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\" : \"Pablo\",\n  \"apellidos\" : \"García\",\n  \"correo\" : \"correo@ejemplo.com\",\n  \"fecha_nacimiento\": \"1989-05-17\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e3b4b4e7-f732-40a4-8ef3-d68297e78e7c",
+            "colId": "49e24378-2d44-44bd-b8bf-e752177b9b67",
+            "containerId": "",
+            "name": "actualizar-usuario",
+            "url": "http://localhost:8080/api/agregar-usuario",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-07-14T20:07:38.428Z",
+            "modified": "2023-07-14T20:08:32.067Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\" : 1,\n  \"nombre\" : \"Antonio\",\n  \"apellidos\" : \"Santiago\",\n  \"correo\" : \"correo2@ejemplo.com\",\n  \"fecha_nacimiento\": \"1989-01-01\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f3d84acf-e390-4e99-b5fe-daf3aa42d09f",
+            "colId": "49e24378-2d44-44bd-b8bf-e752177b9b67",
+            "containerId": "",
+            "name": "eliminar-usuario",
+            "url": "http://localhost:8080/api/eliminar-usuario",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-07-14T20:08:37.943Z",
+            "modified": "2023-07-14T20:08:56.494Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\" : 1\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
